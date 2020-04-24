@@ -18,6 +18,11 @@ class MetronomeViewController: UIViewController, TimerManagerDelegate {
 
     @IBOutlet weak var displayView: DisplayView!
     
+    @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var tapButton: UIButton!
+    @IBOutlet weak var soundButton: UIButton!
+    @IBOutlet weak var bpmButton: UIButton!
+    
     let timerManager = TimerManager()
     var player1: AVAudioPlayer?
     var player2: AVAudioPlayer?
@@ -49,7 +54,6 @@ class MetronomeViewController: UIViewController, TimerManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         configurePlayers()
         
         timerManager.currentBpm = Double(currentBpm)
@@ -57,11 +61,8 @@ class MetronomeViewController: UIViewController, TimerManagerDelegate {
         
         timerManager.delegate = self
         timerManager.startTimer()
-            /*
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(beatsViewTapped))
-        beatsView.isUserInteractionEnabled = true
-        beatsView.addGestureRecognizer(tapGestureRecognizer)
- */
+        pauseButton.setTitle("Stop", for: .normal)
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -70,6 +71,51 @@ class MetronomeViewController: UIViewController, TimerManagerDelegate {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
           return .lightContent
+    }
+    
+    @IBAction func pauseButtonTapped(_ sender: Any) {
+        count = 1
+        self.displayView.resetView()
+        if let _ = timerManager.link {
+            timerManager.stopTimer()
+            pauseButton.setTitle("Start", for: .normal)
+        } else {
+            timerManager.startTimer()
+            pauseButton.setTitle("Stop", for: .normal)
+        }
+    }
+    
+    @IBAction func tapButtonTapped(_ sender: Any) {
+        handleTapTempo()
+    }
+    
+    @IBAction func soundButtonTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func bpmButtonTapped(_ sender: Any) {
+        
+    }
+    
+    var tapTime: Date?
+    func handleTapTempo() {
+        if let time = tapTime {
+            let newTime = Date()
+            let timeDif = newTime.timeIntervalSince(time)
+            if timeDif > 1.0 {
+                tapTime = Date()
+                return
+            }
+            tapTime = newTime
+            currentBpm = Int((60.0 / timeDif))
+            setSlider(forBpm: currentBpm)
+            if timerManager.link == nil {
+                timerManager.startTimer()
+                pauseButton.setTitle("Stop", for: .normal)
+            }
+        } else {
+            tapTime = Date()
+        }
     }
     
     func configurePlayers() {
@@ -238,48 +284,4 @@ class MetronomeViewController: UIViewController, TimerManagerDelegate {
         let value = Float(currentBpm - minTempo) / Float(maxTempo - minTempo)
         bpmSlider.setValue(value, animated: false)
     }
-    
-    var isPlaying = true
-    var countIsClosed = true
-    @IBOutlet var countClosedLeadingConstraint: NSLayoutConstraint!
-    @IBOutlet var countOpenLeadingConstraint: NSLayoutConstraint!
-    @IBOutlet var countWidthConstraint: NSLayoutConstraint!
-    @IBOutlet var countTopConstraint: NSLayoutConstraint!
-    var countOverlay: UIView?
-    /*
-    @objc func beatsViewTapped() {
-        countIsClosed = !countIsClosed
-        if countIsClosed {
-            UIView.animate(withDuration: 0.3, animations: {
-                self.countClosedLeadingConstraint.priority = .defaultHigh
-                self.countWidthConstraint.priority = .defaultHigh
-                self.countOpenLeadingConstraint.priority = .defaultLow
-                self.countTopConstraint.constant = 2
-                self.view.layoutIfNeeded()
-                self.countOverlay?.removeFromSuperview()
-                self.countOverlay = nil
-            })
-        } else {
-            UIView.animate(withDuration: 0.3, animations: {
-                self.countClosedLeadingConstraint.priority = .defaultLow
-                self.countWidthConstraint.priority = .defaultLow
-                self.countOpenLeadingConstraint.priority = .defaultHigh
-                self.countTopConstraint.constant = -60
-                self.view.layoutIfNeeded()
-                
-                let v = Bundle.main.loadNibNamed("CountView", owner: self, options: nil)?.first
-                if let v = v as? UIView {
-                    self.countOverlay = v
-                    self.beatsView.addSubview(self.countOverlay!)
-                    self.countOverlay!.frame = self.beatsView.bounds
-                    for view in self.countOverlay!.subviews {
-                        if let button = view as? UIButton {
-                            button.layer.cornerRadius = (button.frame.width / 2)
-                        }
-                    }
-                }
-            })
-        }
-    }
- */
 }

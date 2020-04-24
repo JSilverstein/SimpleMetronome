@@ -44,6 +44,16 @@ class DisplayView: UIView {
     func handleClick() {
         self.countLabel.text = "\(self.count)"
         
+        handleColor()
+        self.isLight = !self.isLight
+        if count > beats {
+            count = 1
+        } else {
+            count += 1
+        }
+    }
+    
+    func handleColor() {
         if self.isLight == true {
             self.countLabel.textColor = Colors.metroBlue
             self.mainView.backgroundColor = Colors.metroGray
@@ -51,11 +61,12 @@ class DisplayView: UIView {
             self.countLabel.textColor = Colors.metroGray
             self.mainView.backgroundColor = Colors.metroBlue
         }
-        self.isLight = !self.isLight
-        if count > beats {
-            count = 1
-        } else {
-            count += 1
-        }
+    }
+    
+    func resetView() {
+        isLight = false
+        handleColor()
+        self.count = 1
+        self.countLabel.text = "\(self.count)"
     }
 }

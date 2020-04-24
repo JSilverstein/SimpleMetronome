@@ -159,7 +159,7 @@ Unicode: U+25B6 U+FE0E, UTF-8: E2 96 B6 EF B8 8E</string>
                                             <color key="titleColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="soundSelectionTapped:" destination="hnR-dj-FcU" eventType="touchUpInside" id="JAa-NE-EWy"/>
+                                            <action selector="soundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCG-Pt-2o2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l54-24-jUF">
@@ -169,11 +169,11 @@ Unicode: U+25B6 U+FE0E, UTF-8: E2 96 B6 EF B8 8E</string>
                                             <constraint firstAttribute="height" constant="60" id="4fc-hg-zT5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="28"/>
-                                        <state key="normal" title="Pause">
+                                        <state key="normal" title="Stop">
                                             <color key="titleColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="playButtonTapped:" destination="hnR-dj-FcU" eventType="touchUpInside" id="8fB-Zk-qYi"/>
+                                            <action selector="pauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qr-2i-Mso"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FX-Yv-tbg">
@@ -184,7 +184,7 @@ Unicode: U+25B6 U+FE0E, UTF-8: E2 96 B6 EF B8 8E</string>
                                             <color key="titleColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tapTempoTapped:" destination="hnR-dj-FcU" eventType="touchUpInside" id="Xtk-6T-rj1"/>
+                                            <action selector="tapButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5Q-O7-7PE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bti-2Q-bwt">
@@ -194,6 +194,9 @@ Unicode: U+25B6 U+FE0E, UTF-8: E2 96 B6 EF B8 8E</string>
                                         <state key="normal" title="Beats">
                                             <color key="titleColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="bpmButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TOx-Vc-FLB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -239,11 +242,15 @@ Unicode: U+25B6 U+FE0E, UTF-8: E2 96 B6 EF B8 8E</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bpmButton" destination="Bti-2Q-bwt" id="Nbd-2M-9EQ"/>
                         <outlet property="bpmLabel" destination="Y7e-L8-Yb9" id="fTW-b8-2Kd"/>
                         <outlet property="bpmSlider" destination="6D8-Uz-jWI" id="zrz-dl-qjn"/>
                         <outlet property="decreaseButton" destination="mf0-Zf-1An" id="SaL-DG-F9J"/>
                         <outlet property="displayView" destination="C2G-Xj-AJw" id="G70-Rq-VUz"/>
                         <outlet property="increaseButton" destination="33O-fq-lVJ" id="8jB-Dp-YS6"/>
+                        <outlet property="pauseButton" destination="l54-24-jUF" id="Tjc-Jj-UDd"/>
+                        <outlet property="soundButton" destination="MyK-Kd-eEx" id="maQ-29-OBu"/>
+                        <outlet property="tapButton" destination="6FX-Yv-tbg" id="YCd-Mq-VJx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

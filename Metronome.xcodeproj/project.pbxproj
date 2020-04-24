@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		164E4EB02055A63400C3DBBA /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E4EAF2055A63400C3DBBA /* CountView.swift */; };
-		164E4EB22055A64B00C3DBBA /* CountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164E4EB12055A64B00C3DBBA /* CountView.xib */; };
 		16C3A1F020471B2E00FC6C08 /* nine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16C3A1E720471B2D00FC6C08 /* nine.wav */; };
 		16C3A1F120471B2E00FC6C08 /* one.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16C3A1E820471B2D00FC6C08 /* one.wav */; };
 		16C3A1F220471B2E00FC6C08 /* five.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16C3A1E920471B2D00FC6C08 /* five.wav */; };
@@ -21,7 +19,6 @@
 		16C3A200204721F500FC6C08 /* two_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16C3A1FF204721F500FC6C08 /* two_1.wav */; };
 		16E0EBE6240F35030080E35A /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E0EBE5240F35030080E35A /* DisplayView.swift */; };
 		16E0EBE8240F42A90080E35A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E0EBE7240F42A90080E35A /* Colors.swift */; };
-		16E0EBEE240F46CD0080E35A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E0EBED240F46CD0080E35A /* ButtonView.swift */; };
 		16F46CE820463885001FA359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F46CE720463885001FA359 /* AppDelegate.swift */; };
 		16F46CEA20463885001FA359 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F46CE920463885001FA359 /* MetronomeViewController.swift */; };
 		16F46CED20463885001FA359 /* Metronome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F46CEB20463885001FA359 /* Metronome.storyboard */; };
@@ -46,8 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		164E4EAF2055A63400C3DBBA /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
-		164E4EB12055A64B00C3DBBA /* CountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountView.xib; sourceTree = "<group>"; };
 		16C3A1E720471B2D00FC6C08 /* nine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nine.wav; sourceTree = "<group>"; };
 		16C3A1E820471B2D00FC6C08 /* one.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = one.wav; sourceTree = "<group>"; };
 		16C3A1E920471B2D00FC6C08 /* five.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = five.wav; sourceTree = "<group>"; };
@@ -60,7 +55,6 @@
 		16C3A1FF204721F500FC6C08 /* two_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = two_1.wav; sourceTree = "<group>"; };
 		16E0EBE5240F35030080E35A /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		16E0EBE7240F42A90080E35A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		16E0EBED240F46CD0080E35A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		16F46CE420463885001FA359 /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F46CE720463885001FA359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F46CE920463885001FA359 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
@@ -120,10 +114,7 @@
 		16E0EBEB240F44F90080E35A /* subviews */ = {
 			isa = PBXGroup;
 			children = (
-				164E4EB12055A64B00C3DBBA /* CountView.xib */,
-				164E4EAF2055A63400C3DBBA /* CountView.swift */,
 				16E0EBE5240F35030080E35A /* DisplayView.swift */,
-				16E0EBED240F46CD0080E35A /* ButtonView.swift */,
 			);
 			path = subviews;
 			sourceTree = "<group>";
@@ -305,7 +296,6 @@
 				16F46D11204649E0001FA359 /* highBlock.wav in Resources */,
 				16F46CF520463885001FA359 /* LaunchScreen.storyboard in Resources */,
 				16C3A1F020471B2E00FC6C08 /* nine.wav in Resources */,
-				164E4EB22055A64B00C3DBBA /* CountView.xib in Resources */,
 				16F46D10204649E0001FA359 /* lowBlock.wav in Resources */,
 				16F46D12204649E0001FA359 /* midBlock.wav in Resources */,
 				16C3A1F120471B2E00FC6C08 /* one.wav in Resources */,
@@ -363,10 +353,8 @@
 				16F46CEA20463885001FA359 /* MetronomeViewController.swift in Sources */,
 				16E0EBE8240F42A90080E35A /* Colors.swift in Sources */,
 				16F46CF020463885001FA359 /* Metronome.xcdatamodeld in Sources */,
-				164E4EB02055A63400C3DBBA /* CountView.swift in Sources */,
 				16E0EBE6240F35030080E35A /* DisplayView.swift in Sources */,
 				16F46CE820463885001FA359 /* AppDelegate.swift in Sources */,
-				16E0EBEE240F46CD0080E35A /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
