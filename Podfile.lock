@@ -1,0 +1,16 @@
+PODS:
+  - MetronomeManager (0.1.0)
+
+DEPENDENCIES:
+  - MetronomeManager
+
+SPEC REPOS:
+  trunk:
+    - MetronomeManager
+
+SPEC CHECKSUMS:
+  MetronomeManager: a01fbe64be4a0d3a6beb42e21e92d2b95d0d3eca
+
+PODFILE CHECKSUM: 81922ed0fb8752d52d1af1091ea4121413fae99e
+
+COCOAPODS: 1.9.1

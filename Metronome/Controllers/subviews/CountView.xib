@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bodoni72.ttc">
+            <string>BodoniSvtyTwoITCTT-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CountView" customModule="Metronome" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVn-TS-yhV">
+                    <rect key="frame" x="8" y="12" width="48" height="48"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oVn-TS-yhV" secondAttribute="height" id="mL0-Jj-zOn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="1">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="IlP-y1-pFh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr5-tG-Vul">
+                    <rect key="frame" x="64" y="12" width="48" height="48.5"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="dr5-tG-Vul" secondAttribute="height" id="goE-Ri-hRk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="2">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="7wI-Eu-SGP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS4-FC-18h">
+                    <rect key="frame" x="176" y="12" width="48" height="48.5"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rS4-FC-18h" secondAttribute="height" id="EsV-Ny-OI7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="4">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="xnf-Rj-13Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyZ-Z2-TeV">
+                    <rect key="frame" x="232" y="12.5" width="47.5" height="48"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TyZ-Z2-TeV" secondAttribute="height" id="SGG-TO-W4r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="5">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="2zt-iw-KP8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QO-X2-yOx">
+                    <rect key="frame" x="287.5" y="12.5" width="47.5" height="47.5"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3QO-X2-yOx" secondAttribute="height" id="L4z-ya-Isu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="6">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="rkt-we-Xjh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="on4-50-suN">
+                    <rect key="frame" x="8" y="66" width="48" height="48"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="on4-50-suN" secondAttribute="height" id="7yK-12-o1G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="7">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="0r0-Du-eVd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b00-jA-1Qm">
+                    <rect key="frame" x="64" y="65.5" width="47.5" height="48"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="b00-jA-1Qm" secondAttribute="height" id="8e3-Pb-lNn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="8">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="exy-XM-cOu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwU-vI-H8T">
+                    <rect key="frame" x="119.5" y="65.5" width="48" height="48"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UwU-vI-H8T" secondAttribute="height" id="b7a-DM-bXg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="9">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Q2b-hH-PDo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prA-4n-B1o">
+                    <rect key="frame" x="175.5" y="65.5" width="48" height="48"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="prA-4n-B1o" secondAttribute="height" id="DVS-Ha-ulF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="10">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Yre-Oc-g0a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbl-nb-xSS">
+                    <rect key="frame" x="287" y="65.5" width="48" height="48"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Xbl-nb-xSS" secondAttribute="height" id="ecR-9R-SN2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="XU1-60-I9T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm2-Hd-IyS">
+                    <rect key="frame" x="120" y="12.5" width="48" height="48"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vm2-Hd-IyS" secondAttribute="height" id="31A-Dg-2wy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="3">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="AXn-Wg-jc2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKo-NP-quk">
+                    <rect key="frame" x="231.5" y="65.5" width="47.5" height="48"/>
+                    <color key="backgroundColor" red="0.070882161459999996" green="0.29158528649999998" blue="0.55995008680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sKo-NP-quk" secondAttribute="height" id="Hkb-ed-ib1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="11">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="xdq-9d-H3R"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vm2-Hd-IyS" firstAttribute="leading" secondItem="dr5-tG-Vul" secondAttribute="trailing" constant="8" id="2Ai-xv-RlU"/>
+                <constraint firstItem="on4-50-suN" firstAttribute="top" secondItem="oVn-TS-yhV" secondAttribute="bottom" constant="6" id="5Db-wi-f0o"/>
+                <constraint firstItem="dr5-tG-Vul" firstAttribute="centerY" secondItem="oVn-TS-yhV" secondAttribute="centerY" id="8Ih-7h-CV3"/>
+                <constraint firstItem="vm2-Hd-IyS" firstAttribute="width" secondItem="oVn-TS-yhV" secondAttribute="width" id="BJV-SF-9gl"/>
+                <constraint firstItem="on4-50-suN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="BoQ-1d-A9A"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3QO-X2-yOx" secondAttribute="trailing" constant="8" id="Cd1-l4-BcQ"/>
+                <constraint firstItem="rS4-FC-18h" firstAttribute="centerY" secondItem="oVn-TS-yhV" secondAttribute="centerY" id="FXe-rp-mif"/>
+                <constraint firstItem="Xbl-nb-xSS" firstAttribute="leading" secondItem="sKo-NP-quk" secondAttribute="trailing" constant="8" id="HFA-sX-rVm"/>
+                <constraint firstItem="3QO-X2-yOx" firstAttribute="leading" secondItem="TyZ-Z2-TeV" secondAttribute="trailing" constant="8" id="JQ3-6O-BiU"/>
+                <constraint firstItem="TyZ-Z2-TeV" firstAttribute="centerY" secondItem="oVn-TS-yhV" secondAttribute="centerY" id="KRA-Om-eKt"/>
+                <constraint firstItem="3QO-X2-yOx" firstAttribute="centerY" secondItem="oVn-TS-yhV" secondAttribute="centerY" id="Kew-D5-3ce"/>
+                <constraint firstItem="prA-4n-B1o" firstAttribute="width" secondItem="on4-50-suN" secondAttribute="width" id="Nps-jM-h6G"/>
+                <constraint firstItem="rS4-FC-18h" firstAttribute="leading" secondItem="vm2-Hd-IyS" secondAttribute="trailing" constant="8" id="Ohl-fa-q3F"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xbl-nb-xSS" secondAttribute="trailing" constant="8" id="SbV-0e-iBq"/>
+                <constraint firstItem="UwU-vI-H8T" firstAttribute="centerY" secondItem="on4-50-suN" secondAttribute="centerY" id="TlO-0j-QlW"/>
+                <constraint firstItem="oVn-TS-yhV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="WaB-D8-Hr2"/>
+                <constraint firstItem="dr5-tG-Vul" firstAttribute="width" secondItem="oVn-TS-yhV" secondAttribute="width" id="Y9n-zJ-MNe"/>
+                <constraint firstItem="b00-jA-1Qm" firstAttribute="width" secondItem="on4-50-suN" secondAttribute="width" id="Yvs-Gq-00B"/>
+                <constraint firstItem="Xbl-nb-xSS" firstAttribute="width" secondItem="on4-50-suN" secondAttribute="width" id="YxN-bM-t7p"/>
+                <constraint firstItem="sKo-NP-quk" firstAttribute="width" secondItem="on4-50-suN" secondAttribute="width" id="aa2-iw-RV9"/>
+                <constraint firstItem="UwU-vI-H8T" firstAttribute="leading" secondItem="b00-jA-1Qm" secondAttribute="trailing" constant="8" id="byn-CB-zvt"/>
+                <constraint firstItem="prA-4n-B1o" firstAttribute="centerY" secondItem="on4-50-suN" secondAttribute="centerY" id="gDy-ET-aB1"/>
+                <constraint firstItem="sKo-NP-quk" firstAttribute="leading" secondItem="prA-4n-B1o" secondAttribute="trailing" constant="8" id="hcg-Mp-8jX"/>
+                <constraint firstItem="rS4-FC-18h" firstAttribute="width" secondItem="oVn-TS-yhV" secondAttribute="width" id="iau-8Z-orD"/>
+                <constraint firstItem="3QO-X2-yOx" firstAttribute="width" secondItem="oVn-TS-yhV" secondAttribute="width" id="k6s-nT-IFB"/>
+                <constraint firstItem="prA-4n-B1o" firstAttribute="leading" secondItem="UwU-vI-H8T" secondAttribute="trailing" constant="8" id="kFa-nL-bbI"/>
+                <constraint firstItem="Xbl-nb-xSS" firstAttribute="centerY" secondItem="on4-50-suN" secondAttribute="centerY" id="kM5-XH-XMC"/>
+                <constraint firstItem="sKo-NP-quk" firstAttribute="centerY" secondItem="on4-50-suN" secondAttribute="centerY" id="lK5-nT-eO8"/>
+                <constraint firstItem="oVn-TS-yhV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="mH8-tv-yaC"/>
+                <constraint firstItem="UwU-vI-H8T" firstAttribute="width" secondItem="on4-50-suN" secondAttribute="width" id="pwC-QC-VCm"/>
+                <constraint firstItem="TyZ-Z2-TeV" firstAttribute="leading" secondItem="rS4-FC-18h" secondAttribute="trailing" constant="8" id="qPE-MK-MbB"/>
+                <constraint firstItem="TyZ-Z2-TeV" firstAttribute="width" secondItem="oVn-TS-yhV" secondAttribute="width" id="rOq-2a-JGd"/>
+                <constraint firstItem="b00-jA-1Qm" firstAttribute="centerY" secondItem="on4-50-suN" secondAttribute="centerY" id="u7i-5D-aVf"/>
+                <constraint firstItem="b00-jA-1Qm" firstAttribute="leading" secondItem="on4-50-suN" secondAttribute="trailing" constant="8" id="w2r-Nb-vHO"/>
+                <constraint firstItem="vm2-Hd-IyS" firstAttribute="centerY" secondItem="oVn-TS-yhV" secondAttribute="centerY" id="wds-8A-rve"/>
+                <constraint firstItem="dr5-tG-Vul" firstAttribute="leading" secondItem="oVn-TS-yhV" secondAttribute="trailing" constant="8" id="yy4-AC-sIQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="button1" destination="oVn-TS-yhV" id="Zj5-7g-Xor"/>
+            </connections>
+            <point key="canvasLocation" x="-44.5" y="19"/>
+        </view>
+    </objects>
+</document>
